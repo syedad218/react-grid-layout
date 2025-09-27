@@ -298,8 +298,9 @@ draggableCancel: ?string = '',
 // If you forget the leading . it will not work.
 draggableHandle: ?string = '',
 
-// Compaction type.
-compactType: ?('vertical' | 'horizontal' | null) = 'vertical';
+// Compaction type. "wrap" mode is handled for dragging
+// but does not yet cause any actual compacting.
+compactType: ?('vertical' | 'horizontal' | 'wrap') = 'vertical';
 
 // Layout is an array of objects with the format:
 // The index into the layout must match the key used on each item component.
